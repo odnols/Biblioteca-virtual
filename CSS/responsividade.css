@@ -1,0 +1,21 @@
+
+/* telas entre 1367 e 1700 */
+@media only screen and (min-width: 1367px) and (max-width: 2200px){
+    .grid-container{
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+}
+
+/* telas entre 768px e 1366px */
+@media only screen and (min-width: 721px) and (max-width: 1366px){
+    .grid-container{
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+}
+
+/* telas com largura entre 0px e 767px */
+@media only screen and (min-width: 0px) and (max-width: 720px){
+    .grid-container{
+        grid-template-columns: auto auto auto;
+    }
+}

@@ -1,0 +1,170 @@
+body{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+hr#hr_login{
+    animation: encolhe_hr 1s;
+    width: 30%;
+}
+#fundo{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: midnightblue;
+}
+#titulo{
+    position: absolute;
+    left: 2%;
+    font-size: 50px;
+    top: -10px;
+    text-shadow: 1px 2px 1px black;
+    pointer-events: none;
+    animation: mostra_bloco .5s;
+}
+div#carrosel_fundo{
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    animation: mostra_bloco 1s;
+}
+img.carrosel{
+    filter: brightness(1.1) contrast(1.3);
+    width: 100%;
+    height: 100%;
+}
+input[type="checkbox"]#checkbox_historico{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+input:checked[type="checkbox"]#checkbox_historico{
+    background: midnightblue;
+}
+input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.08);
+    box-shadow: 0 2px 50px rgba(0, 0, 0, .4);
+    transition: .5s;
+}
+input:checked[type="checkbox"]:before{
+    left: 40px;
+}
+#barra_topo{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 15px black;
+    background-image: url("../img/Texturas/Mosaico.png");
+    z-index: 4;
+    color: white;
+    top: 0%;
+}
+#xbox_sm{
+    width: 50px;
+    height: 50px;
+    top: 15%;
+    position: absolute;
+    transition: transform .2s, filter .2s;
+    z-index: 5;
+}
+#gamerscore{
+    position: absolute;
+    right: 18%;
+    top: 5%;
+    pointer-events: none;
+}
+#conquista_sm{
+    width: 50px;
+    right: 13%;
+    position: absolute;
+    height: 50px;
+    transition: transform .2s, filter .2s;
+}
+#historico_sm{
+    z-index: 3;
+    right: 9%;
+    position: absolute;
+    transition: transform .2s, filter .2s;
+}
+#xbox_sm:hover{
+    transform: scale(1.4);
+    -webkit-filter: drop-shadow(0px 0px 15px #ffffff);
+    filter: drop-shadow(0px 0px 15px #ffffff);
+}
+#conquista_sm:hover{
+    transform: scale(1.4);
+    -webkit-filter: drop-shadow(0px 0px 15px #ffffff);
+    filter: drop-shadow(0px 0px 15px #ffffff);
+}
+#historico_sm:hover{
+    transform: scale(1.4);
+    -webkit-filter: drop-shadow(0px 0px 15px #ffffff);
+    filter: drop-shadow(0px 0px 15px #ffffff);
+}
+#formulario_login{
+    display: none;
+    z-index: 3;
+    padding-top: 6%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+#perfil_sm{
+    border-radius: 50%;
+    border: solid 3px white;
+    width: 50px;
+    height: 50px;
+    right: 3%;
+    position: absolute;
+    top: 15%;
+    z-index: 3;
+    transition: transform .2s, box-shadow .2s;
+}
+#perfil_sm:hover{
+    transform: scale(1.4);
+    box-shadow: 0px 0px 15px white;
+}
+#transitador{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: fixed;
+    top: 4%;
+    background-color: midnightblue;
+    z-index: 3;
+    right: 4%;
+    box-shadow: 0px 0px 50px black;
+}
+#rodape{
+    pointer-events: none;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    box-shadow: 0px 0px 15px black;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    text-shadow: 1px 2px 1px black;
+    text-align: center;
+}

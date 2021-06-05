@@ -1,0 +1,142 @@
+/* Globais */
+@keyframes encolhe_hr{
+    from { width: 90%; opacity: 0; }
+    to { width: 30%; opacity: 1; }
+}
+@keyframes JumpIn{
+    from { top: 15%; right: 50%; }
+    to { width: 2000px; height: 2000px; bottom: 600%; right: -25%; opacity: 0;}
+}
+@keyframes transita{
+    0% { right: 0%; top: 0%; }
+    90% { width: 100%; height: 200%; transform: scale(2); opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes mostra_bloco{
+    from{ opacity: 0; }
+    to{ opacity: 1; }
+}
+@keyframes puxa_conquista_hs{
+    from { grid-gap: 50px; }
+    to { grid-gap: 10px; }
+}
+@keyframes esconde_bloco{
+    from{ }
+    to{ opacity: 0; }
+}
+@keyframes esconde_bloco2{
+    from{ }
+    to{ opacity: 0; }
+}
+@keyframes esconde_bloco3{
+    from{ }
+    to{ opacity: 0; }
+}
+/* Perfil */
+@keyframes carrega_perfil{
+    from{ right: 10%; }
+    to{ right: 5%; }
+}
+@keyframes volta_inicio{
+    from{ right: 5%; }
+    to{ right: 10%; }
+}
+@keyframes contorna_foto{
+    from{ border: outset 0px white;}
+    to{ border: outset 5px white; }
+}
+/* Biblioteca */
+@keyframes estica_bloco{
+    from { height: 75%; }
+    to { height: 100%; }
+}
+@keyframes puxa_biblio{
+    from { right: 0%; height: 100%; width: 0px; border-radius: 0px; }
+    to { width: 100%; height: 100%; }
+}
+@keyframes abre_biblio{
+    from { width: 100%; }
+    to { left: 0%; width: 0px;}
+}
+@keyframes desliza_esquerda{
+    from { left: 100%; }
+    to { left: 1%; }
+}
+@keyframes esconde_texto{
+    10% { opacity: 1; }
+    95% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes neon_fundo{
+    0% { box-shadow: 0px 0px 50px midnightblue; }
+    50% { box-shadow: 0px 0px 85px rgb(40, 40, 136);}
+    75% { box-shadow: 0px 0px 15px rgb(27, 27, 134);}
+    100% { box-shadow: 0px 0px 50px midnightblue;}
+}
+@keyframes puxa_conquista{
+    from { height: 0px; }
+    to { height: 100%; }
+}
+@keyframes some_biblio{
+    from { padding-top: 30%; opacity: 0; }
+    to { padding-top: 10%; opacity: 1; }
+}
+/* Conquistas */
+@keyframes game_completo{
+    from { transform: rotateZ(30deg) scale(2); }
+    to { transform: rotateZ(0deg) scale(1); }
+}
+@keyframes puxa_informa{
+    from { left: -250px; }
+    to { left: -15px; }
+}
+@keyframes puxa_att_conquista{
+    from { top: -10%; opacity: 0; }
+    to { top: 15%; opacity: 1; }
+}
+@keyframes sobe_conquistas{
+    0% { top: 40%; opacity: 0; }
+    100% { top: 30%; opacity: 1; }
+}
+@keyframes transita_conquistas{
+    from { height: 0%; opacity: 0; }
+    to { height: 100%; opacity: 1; }
+}
+@keyframes mostra_bloco2{
+    from{ opacity: 0; }
+    to{ opacity: .8; }
+}
+@keyframes encolhe_bloco{
+    from { height: 100%; }
+    to { height: 75%; }
+}
+@keyframes desce_transitador{
+    from { top: 0%; width: 100%; height: 100%; opacity: 1; }
+    to { top: 100%; width: 100%; height: 0%; opacity: 0; }
+}
+@keyframes img_fundo{
+    from { transform: scale(1.2); }
+    to { transform: scale(1); }
+}
+@keyframes anima_fundo{
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3) rotateZ(4deg); }
+    100% { transform: scale(1) }
+}
+@keyframes sobe_bloco{
+    from { box-shadow: 0px 0px 0px black; }
+    to { box-shadow: 0px 0px 15px black; }
+}
+@keyframes expande_hr{
+    from { width: 0px; }
+    to { width: 100%; }
+}
+/* Histórico */
+@keyframes desliza_conquista{
+    from { right: 13%; }
+    to { right: 9%; }
+}
+@keyframes desliza_gamerscore{
+    from { right: 18%; }
+    to { right: 14%; }
+}

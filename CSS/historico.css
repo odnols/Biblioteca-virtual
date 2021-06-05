@@ -1,0 +1,191 @@
+body{
+    overflow-x: hidden;
+}
+#ultimo_game_sm{
+    right: 9%;
+    top: 0px;
+    position: absolute;
+    transition: transform .2s;
+}
+#ultimo_game_sm:hover{
+    transform: scale(1.4);
+    -webkit-filter: drop-shadow(0px 0px 15px #ffffff);
+    filter: drop-shadow(0px 0px 15px #ffffff);
+}
+#historic_tt{
+    padding-top: 7%;
+    z-index: 2;
+    color: white;
+    width: auto;
+    position: absolute;
+    right: 10%;
+}
+#fundo_historic{
+    background-color: midnightblue;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 0;
+}
+#fundo-pp{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+#quadro_pequeno{
+    left: 20%;
+    top: 27%;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+}
+#quadro_pequeno_plus{
+    border-radius: 5px;
+    left: 18%;
+    top: 20%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .6);
+    box-shadow: 0px 0px 10px black;
+}
+#quadro_remanescente{
+    left: 10%;
+    position: relative;
+    width: 64px;
+    background-color: black;
+    text-align: center;
+    box-shadow: 0px 0px 15px black;
+}
+#data_conq{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 300px;
+    padding-left: 2%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-shadow: 0px 0px 3px black;
+}
+#pontuacao_soma_hs{
+    float: right;
+    font-size: 25px;
+    max-width: 130px;
+    background-color: rgba(0, 0, 0, 0.4);
+    min-width: 110px;
+    text-align: center;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: orange;
+    text-shadow: 0px 0px 3px black;
+}
+#conquista_pp{
+    right: 15%;
+    top: 5%;
+    width: 64px;
+    height: 64px;
+    overflow: initial;
+}
+#historic_grid_hs{
+    animation: mostra_bloco 1s;
+    color: white;
+    padding-top: 10%;
+    max-width: 70%;
+    padding-left: 5%;
+    position: relative;
+    height: auto;
+    z-index: 2;
+}
+.grid-conquistas-pp{
+    box-shadow: inset 0px 0px 15px black;
+    animation: puxa_conquista_hs 1s;
+    background-color: rgba(0, 0, 0, .3);
+    background-image: url('../img/Texturas/Naves.png');
+    display: grid;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    grid-gap: 10px;
+    width: auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    padding: 20px;
+    min-width: 100px;
+}
+.grid-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 10px;
+    max-width: 100%;
+    height: 100%;
+}
+.grid-item{
+    z-index: 2;
+    box-shadow: 0px 0px 15px black;
+    color: white;
+    height: 200px;
+    width: 150px;
+    transition: box-shadow .3s, transform .5s;
+}
+#nome_game_banner{
+    position: absolute;
+    float: left;
+    width: 100px;
+    opacity: 0.000001;
+}
+.capa_game{
+    width: 150px;
+    height: 200px;
+}
+.grid-conq-pp{
+    z-index: 3;
+    box-shadow: 0px 0px 10px black;
+    height: 64px;
+    width: 64px;
+    transition: box-shadow .3s, transform .5s;
+    background-color: rgba(0, 0, 0, .6);
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.grid-item:hover{
+    box-shadow: 0px 0px 15px white;
+    transform: scale(1.1);
+}
+.grid-item1:hover{
+    box-shadow: 0px 0px 15px white;
+    transform: scale(1.1);
+}
+#opcoes_add{
+    position: absolute;
+    width: auto;
+    right: 30%;
+    top: 15%;
+    z-index: 3;
+}
+.butao_add{
+    border-radius: 15px;
+    font-size: 20px;
+    transition: background-color .5s, transform .5s, color 1s;
+}
+.butao_add:hover{
+    color: white;
+    transform: scale(1.05);
+    background-color: midnightblue;
+}
+#biblioteca_completa{
+    overflow-y: auto;
+    z-index: 3;
+    display: none;
+    width: 100%;
+    position: absolute;
+    padding-bottom: 150px;
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 5%;
+    background: linear-gradient(rgba(25, 25, 112, .6), rgb(11, 11, 58));
+    animation: some_biblio .7s;
+}
